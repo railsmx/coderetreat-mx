@@ -10,6 +10,7 @@ server = ENV['CAP_SERVER']
 
 set :application, "coderetreat-mx"
 set :repository,  "git@github.com:railsmx/coderetreat-mx.git"
+set :git_shallow_clone, 1
 set :user, "www"
 set :deploy_to, "/home/www/coderetreat"
 set :use_sudo, false
