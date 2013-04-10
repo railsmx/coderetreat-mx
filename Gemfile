@@ -27,6 +27,7 @@ gem 'jquery-rails'
 group :development do
   gem 'capistrano'
   gem 'capistrano-rbenv'
+  gem 'capistrano-unicorn'
 end
 
 
@@ -46,5 +47,5 @@ end
 # gem 'debugger'
 #
 group :production do
-  gem 'thin'
+  gem 'unicorn'
 end
