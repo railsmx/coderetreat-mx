@@ -36,6 +36,11 @@ GEM
       net-sftp (>= 2.0.0)
       net-ssh (>= 2.0.14)
       net-ssh-gateway (>= 1.1.0)
+    capistrano-platform-resources (0.1.2)
+      capistrano
+    capistrano-rbenv (1.0.3)
+      capistrano
+      capistrano-platform-resources (>= 0.1.0)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
       railties (~> 3.2.0)
@@ -138,6 +143,7 @@ PLATFORMS
 
 DEPENDENCIES
   capistrano
+  capistrano-rbenv
   coffee-rails (~> 3.2.1)
   haml
   jquery-rails
