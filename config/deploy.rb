@@ -26,6 +26,12 @@ set :default_environment, {
   'PATH' => "$HOME/.rbenv/shims:$HOME/.rbenv/bin:$PATH"
 }
 
+namespace :deploy do
+  task :assets do
+    run "cd #{current_path} && #{current_path}/bin/rake assets:precompile"
+  end
+end
+
 before "deploy:restart", "deploy:assets"
 after 'deploy:restart', 'unicorn:reload' # app IS NOT preloaded
 after 'deploy:restart', 'unicorn:restart'  # app preloaded
