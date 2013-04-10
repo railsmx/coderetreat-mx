@@ -40,3 +40,7 @@ gem 'capistrano'
 
 # To use debugger
 # gem 'debugger'
+#
+group :production do
+  gem 'thin'
+end
